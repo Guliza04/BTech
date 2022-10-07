@@ -1,0 +1,141 @@
+
+* {
+    box-sizing: border-box;
+}
+@media (max-width: 550px) {
+    .h1{
+        font-size: 23px;
+    }
+    .name{
+        font-size: 20px;
+    }
+}
+@media (max-width: 400px) {
+    .name{
+        font-size: 16px;
+    }
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+
+@media (max-width: 500px) {
+    .item{
+        font-size: 14px;
+    }
+    .itemDesc{
+        font-size: 12px;
+    }
+}
+.reviews{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+}
+
+.block_img_price {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1140px;
+}
+@media (max-width: 1140px) {
+    .product {
+        width: 100%;
+        padding: 40px 0;
+    }
+    .block_img_price{
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    
+    .block_img_price{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.image {
+    padding-top: 30px;
+}
+
+.block_table {
+    /* max-width: 580px; */
+}
+.block {
+    height:200px;
+    line-height: 35px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.svg {
+    padding-bottom: 15px;
+}
+
+.between {
+    display: flex;
+    /* max-width: 500px; */
+    justify-content: space-between;
+}
+
+.line {
+    border-bottom: 1px solid #F1F0F3;
+    /* width: 500px; */
+}
+
+
+
+.button {
+    margin-top: 120px;
+    width: 235px;
+    height: 48px;
+    padding: 12px 24px;
+    background-color: #F9FC62;
+    border-radius: 12px;
+    border: none;
+    font-weight: 800;
+}
+.desc{
+    margin-top: 40px;
+
+}
+.desc_product p{
+    margin-top: 15px;
+    max-width: 804px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #0B1124;
+}
+
+.block_image image {
+    width: 160px;
+    height: 154px;
+}
+
+.products p {
+
+    /* width: 150px; */
+}
+.products {
+
+}
+
+.products .cards {
+    display: flex;
+    justify-content: space-between;
+}
