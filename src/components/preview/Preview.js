@@ -30,7 +30,8 @@ function Preview({ todo }) {
 
         if (e.target.classList.contains(classes.active)) {
             handleOpen();
-            let response = await fetch('http://jsonplaceholder.typicode.com/posts', {
+            let response = await 
+            fetch('http://jsonplaceholder.typicode.com/posts', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json;charset=utf-8'
@@ -70,11 +71,7 @@ function Preview({ todo }) {
                             <Skeleton variant="circular" width={ 190 } height={ 190 } />
                             :
                             <img className={ classes.img } src={ info.sprites.other.dream_world.front_default } alt='image not found' />
-
                     }
-
-
-
                 </Link>
                 {/* <p className={ classes.name }>{todo.name} </p> */ }
                 {
@@ -82,8 +79,6 @@ function Preview({ todo }) {
                         ?
                         (
                             <Skeleton variant="text" />
-
-
                         )
                         :
                         <>

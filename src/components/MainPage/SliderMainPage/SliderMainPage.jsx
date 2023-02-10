@@ -32,7 +32,6 @@ const SliderMainPage = () => {
                         delay: 3000,
                     }}
                 >
-
                     {
                         data.length === 0
                         ?
@@ -40,11 +39,8 @@ const SliderMainPage = () => {
                         :
                         data.map(item => <SwiperSlide  key={ item.name }><SliderMainPageItem className={cl.slide} info={ item.url } /></SwiperSlide>)
                     }
-
-
                 </Swiper>
             </div>
-
         </div>
     );
 };

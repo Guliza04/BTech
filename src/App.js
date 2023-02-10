@@ -4,7 +4,7 @@ import MainPage from "./pages/mainPage/MainPage";
 import HityPage from "./pages/hityPage/HityPage";
 import React, { useEffect } from "react";
 import SignIn from './pages/Delivery/Delivery';
-import FavoritePage from './pages/favoritePage/FavoritePage';
+import FavoritePage from './pages/FavoritePage/FavoritePage';
 import BindCard from './pages/BindCard/BindCard';
 import LoginPage from './pages/loginPage/LoginPage';
 import PinLoginPage from './pages/loginPage/PinLoginPages';
@@ -46,12 +46,9 @@ function App() {
           }
           <Route path='/bind' element={ <BindCard /> } />
         </Routes>
+        <Footer/>
 
       </React.StrictMode>
-      {/* <Footer /> */}
-
-      {/* <SimpleMap /> */ }
-
     </>
   );
 }

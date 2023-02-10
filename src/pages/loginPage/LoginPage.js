@@ -5,15 +5,11 @@ import { useDispatch } from "react-redux";
 import { createUserAction, userAction } from "../../redux/actions/actions";
 import { Link } from 'react-router-dom';
 
-
 const LoginPage = () => {
-
     const dispatch = useDispatch()
 
     //* react-hook-form
     const { register } = useForm()
-
-
     const [passwordShow, setPasswordShow] = useState(false)
 
     //* change show
@@ -25,8 +21,6 @@ const LoginPage = () => {
         password: "",
     })
 
-
-
     const changeInput = (e) => {
         setUser({ ...user, [e.target.name]: e.target.value })
     }
@@ -36,9 +30,7 @@ const LoginPage = () => {
         dispatch(userAction(user))
         localStorage.setItem('user', JSON.stringify(user));
         localStorage.setItem('isLoggin', false);
-
     }
-
     return (
         <div className={ classes.login }>
             <div className={ classes.login_box }>
@@ -87,8 +79,6 @@ const LoginPage = () => {
                                 Создать аккаунт
                             </Link>
                     }
-
-
                 </div>
             </div>
         </div>

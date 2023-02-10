@@ -57,7 +57,6 @@ const BindCard = () => {
                 
             </div>
             <p onClick={click} style={{display: 'inline'}} className='button'>Привязать</p>
-            
         </div>
     );
 };

@@ -9,14 +9,7 @@ import { CircularProgress } from '@mui/material'
 
 function ProductPage() {
 
-    // const [data, setData] = useState({ sprites: { other: { dream_world: { front_default: '' } } } })
-    // useEffect(() => {
-    //     return async () => {
-    //         const response = await fetch(info);
-    //         const json = await response.json();
-    //         setData(json)
-    //     }
-    // }, []);
+    
     const products = useSelector(state => state.products.products)
     const param = useParams()
 
@@ -26,6 +19,7 @@ function ProductPage() {
 
     useEffect(() => {
         fetch(`https://pokeapi.co/api/v2/pokemon/${param.id}`)
+        fetch(``)
             .then(res => res.json())
             .then(data => setImg(data))
     }, [])

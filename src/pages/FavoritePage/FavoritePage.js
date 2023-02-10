@@ -17,7 +17,6 @@ const FavoritePage = () => {
 			if (productsFav.result[productsFav.result.length - 1].id !== cart.id) {
 				setProductsFav({...productsFav, result: [...productsFav.result, cart]})
 				dispatch(addBascket(cart));
-
 			}
 		} else {
 			setProductsFav({...productsFav, result: [...productsFav.result, cart]})
@@ -44,7 +43,7 @@ const FavoritePage = () => {
 					key={ p.id }
 					{ ...p }
 					addFunc={ handleAddFunc }
-					removeFAvorites={ handleRemoveFunc }
+					removeFAvorites={ handleRemoveFunc}
 				/>
 			)) }
 		</div>

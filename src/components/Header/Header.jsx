@@ -9,7 +9,6 @@ import SearchHeader from './components/SearchHeader/SearchHeader';
 import useBreadcrumbs from 'use-react-router-breadcrumbs';
 import BreadCrumbsItem from './components/BreadCrumbs/BreadCrumbsItem';
 
-
 const drawerWidth = 240;
 
 const Header = (props) => {
